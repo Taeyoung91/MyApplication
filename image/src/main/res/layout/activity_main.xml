@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/Text1"
+        android:text="선택을 시작하겠습니까?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText"/>
+    <Switch
+        android:id="@+id/switAgree"
+        android:checked="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/Text2"
+        android:text="좋아하는 안드로이드 버전은?"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText"/>
+    <RadioGroup
+        android:id="@+id/Rgroup"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <RadioButton
+            android:id="@+id/jelly"
+            android:text="젤리빈(4.3)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText"/>
+        <RadioButton
+            android:id="@+id/kitkat"
+            android:text="킷캣(4.4)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText"/>
+        <RadioButton
+            android:id="@+id/lollipop"
+            android:text="롤리팝(5.0)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgVer"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/finishBtn"
+        android:text="종료"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/refreshBtn"
+        android:text="처음으로"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:ignore="HardcodedText"/>
+
+
+
+
+</LinearLayout>
