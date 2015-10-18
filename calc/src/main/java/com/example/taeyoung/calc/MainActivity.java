@@ -2,9 +2,7 @@ package com.example.taeyoung.calc;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -78,7 +76,7 @@ public class MainActivity extends Activity {
                 if(number1.equals("") || number2.equals("")){
                     Toast.makeText(MainActivity.this,"값을 입력하세요",Toast.LENGTH_SHORT).show();
                 }
-                else if(number2.equals("0")){
+                else if(Double.parseDouble(number2) == 0){
                     Toast.makeText(MainActivity.this,"분모가 0입니다.",Toast.LENGTH_SHORT).show();
                 }
                 else {
@@ -94,7 +92,7 @@ public class MainActivity extends Activity {
                 if(number1.equals("") || number2.equals("")){
                     Toast.makeText(MainActivity.this,"값을 입력하세요",Toast.LENGTH_SHORT).show();
                 }
-                else if (number2.equals("0")) {
+                else if (Double.parseDouble(number2) == 0) {
                     Toast.makeText(MainActivity.this, "분모가 0입니다.", Toast.LENGTH_SHORT).show();
                 }
                 else {
