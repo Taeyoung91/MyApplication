@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String temp = edtUrl.getText().toString();
-                if ( !temp.substring(0, 7).equals("http://") || !temp.substring(0, 7).equals("HTTP://") ) {
+                if ( !temp.substring(0, 7).equals("http://") ) {
                     temp = "http://" + temp;
                     edtUrl.setText(temp);
                 }
